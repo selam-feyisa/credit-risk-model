@@ -1,5 +1,10 @@
 # .gitignore
-data/
+# Ignore raw data
+data/raw/
+
+# But allow processed data
+!data/processed/
+!data/processed/**
 mlruns/
 __pycache__/
 *.pyc
