@@ -1,14 +1,20 @@
-# Ignore only raw data
-data/raw/**
-
-# Keep processed data
-data/processed/**
-
-# other ignores
+# Data and generated artifacts must stay local
+data/**
+artifacts/
+models/
 mlruns/
+mlartifacts/
+
+# Python/local environment
+.venv/
 __pycache__/
 *.pyc
 .env
 *.egg-info/
 dist/
 .DS_Store
+
+# Reports generated for submission but not source code
+final_report*
+interim_report*
+check_notebook.py
